@@ -1,0 +1,10 @@
+场景模拟:
+s1(Student)和t1(Teacher)共同观察一个物体pen.
+对于Pen本身的属性的变化,Student和Teacher要实时地响应.
+
+角色分配:
+观察者     Student和Teacher
+被观察者    Pen
+
+动作:
+Pen改变name和color的值,Student和Teacher要实时地报告Pen的新值.
