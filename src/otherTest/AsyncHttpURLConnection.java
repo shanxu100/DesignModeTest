@@ -113,21 +113,6 @@ public class AsyncHttpURLConnection {
 
             URL Url = new URL(url);
 
-            /*
-            if (Url.getProtocol().toUpperCase().equals("HTTPS")) {
-                //if (true) {
-//
-                trustAllHosts();
-                HttpsURLConnection https = (HttpsURLConnection) Url
-                        .openConnection();
-                https.setHostnameVerifier(DO_NOT_VERIFY);
-                connection = https;
-            } else {
-                connection = (HttpURLConnection) Url.openConnection();
-            }
-            */
-
-
             connection = (HttpURLConnection) Url.openConnection();
 
 
@@ -195,43 +180,6 @@ public class AsyncHttpURLConnection {
     /**
      * 忽略安全证书
      */
-    /**
-    public static void trustAllHosts() {
-        // Create a trust manager that does not validate certificate chains
-        // Android use X509 cert
-        TrustManager[] trustAllCerts = new TrustManager[]{new X509TrustManager() {
-            public X509Certificate[] getAcceptedIssuers() {
-                return new X509Certificate[]{};
-            }
-
-            public void checkClientTrusted(X509Certificate[] chain,
-                                           String authType) throws CertificateException {
-            }
-
-            public void checkServerTrusted(X509Certificate[] chain,
-                                           String authType) throws CertificateException {
-            }
-        }};
-
-        // Install the all-trusting trust manager
-        try {
-            SSLContext sc = SSLContext.getInstance("TLS");
-            sc.init(null, trustAllCerts, new java.security.SecureRandom());
-            HttpsURLConnection
-                    .setDefaultSSLSocketFactory(sc.getSocketFactory());
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-    }
-
-    public final static HostnameVerifier DO_NOT_VERIFY = new HostnameVerifier() {
-        public boolean verify(String hostname, SSLSession session) {
-            return true;
-        }
-    };
-
-     **/
-
     private static void disableSslVerification() {
         try
         {

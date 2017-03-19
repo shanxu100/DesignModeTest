@@ -5,7 +5,7 @@ package otherTest;
  */
 public class InnerClassTest {
 
-    ObjectTest ot=new ObjectTest();
+    ObjectTest ot;
 
     public void OutPut()
     {
