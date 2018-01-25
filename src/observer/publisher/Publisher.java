@@ -1,4 +1,6 @@
-package observer;
+package observer.publisher;
+
+import observer.subscriber.Subscriber;
 
 import java.util.LinkedList;
 import java.util.List;

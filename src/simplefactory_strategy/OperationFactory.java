@@ -1,5 +1,7 @@
 package simplefactory_strategy;
 
+import simplefactory_strategy.operation.*;
+
 /**
  * Created by guan on 9/18/16.
  * 简单工厂模式

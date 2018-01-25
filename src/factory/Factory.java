@@ -1,6 +1,6 @@
 package factory;
 
-import simplefactory_strategy.Operation;
+import simplefactory_strategy.operation.Operation;
 
 /**
  * Created by guan on 9/18/16.

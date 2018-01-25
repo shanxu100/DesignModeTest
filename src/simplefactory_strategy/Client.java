@@ -1,6 +1,8 @@
 package simplefactory_strategy;
 
 import factory.AddFactory;
+import simplefactory_strategy.operation.AddOperation;
+import simplefactory_strategy.operation.Operation;
 
 /**
  * Created by guan on 9/18/16.
@@ -11,6 +13,14 @@ public class Client {
 
     public static void main(String[] args)
     {
+
+        /**
+         * 只使用策略模式：客户端只需要指定Operation
+         */
+        System.out.println("\nOnly Strategy===============");
+        OperationContext opeContext=new OperationContext(new AddOperation(),2,3);
+        opeContext.doOperation();
+
 
         /**
          * 简单工厂模式的使用，客户端需要知道两个类：OperationFactory和Operation

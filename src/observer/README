@@ -1,3 +1,4 @@
+观察者模式：订阅/发布模型
 场景模拟:
 s1(Student)和t1(Teacher)共同观察一个物体pen.
 对于Pen本身的属性的变化,Student和Teacher要实时地响应.

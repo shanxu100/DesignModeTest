@@ -1,7 +1,7 @@
 package factory;
 
-import simplefactory_strategy.Operation;
-import simplefactory_strategy.SubOperation;
+import simplefactory_strategy.operation.Operation;
+import simplefactory_strategy.operation.SubOperation;
 
 /**
  * Created by guan on 9/18/16.

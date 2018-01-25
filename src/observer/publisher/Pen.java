@@ -1,4 +1,4 @@
-package observer;
+package observer.publisher;
 /**
  * Created by lianglitu on 16/9/19.
  */

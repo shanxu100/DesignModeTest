@@ -1,4 +1,4 @@
-package observer;
+package observer.subscriber;
 
 /**
  * Created by lianglitu on 16/9/19.

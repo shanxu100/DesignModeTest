@@ -1,4 +1,4 @@
-package simplefactory_strategy;
+package simplefactory_strategy.operation;
 
 /**
  * Created by guan on 9/18/16.

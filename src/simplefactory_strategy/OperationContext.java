@@ -1,15 +1,22 @@
 package simplefactory_strategy;
 
+import simplefactory_strategy.operation.*;
+
 /**
  * Created by guan on 9/18/16.
- *
- * 策略模式和简单工厂模式相结合
  */
 public class OperationContext {
 
     Operation operation;
 
-    public OperationContext(String ope,double a,double b) {
+    /**
+     * 策略模式和简单工厂模式相结合
+     *
+     * @param ope
+     * @param a
+     * @param b
+     */
+    public OperationContext(String ope, double a, double b) {
 
         switch (ope) {
             case "+":
@@ -28,13 +35,26 @@ public class OperationContext {
                 operation = new AddOperation();
                 break;
         }
-        operation.NumberA=a;
-        operation.NumberB=b;
+        operation.NumberA = a;
+        operation.NumberB = b;
 
     }
 
-    public void doOperation()
-    {
+    /**
+     * 只使用 策略模式
+     *
+     * @param operation
+     * @param a
+     * @param b
+     */
+    public OperationContext(Operation operation, double a, double b) {
+        this.operation = operation;
+        operation.NumberA = a;
+        operation.NumberB = b;
+
+    }
+
+    public void doOperation() {
         operation.doOperation();
     }
 }

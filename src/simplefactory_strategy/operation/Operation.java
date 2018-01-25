@@ -1,11 +1,11 @@
-package simplefactory_strategy;
+package simplefactory_strategy.operation;
 
 /**
  * Created by guan on 9/18/16.
  */
 public abstract class Operation {
-    double NumberA;
-    double NumberB;
+    public double NumberA;
+    public double NumberB;
     public abstract void doOperation();
 
     public abstract void showInfo();
