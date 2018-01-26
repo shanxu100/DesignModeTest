@@ -15,7 +15,7 @@ public class Client {
     {
 
         /**
-         * 只使用策略模式：客户端只需要指定Operation
+         * 只使用策略模式：客户端需要指定Operation
          */
         System.out.println("\nOnly Strategy===============");
         OperationContext opeContext=new OperationContext(new AddOperation(),2,3);

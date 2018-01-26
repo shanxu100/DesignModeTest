@@ -9,7 +9,7 @@ public class Real implements ToDoTask {
 
     public Real(String realTAG)
     {
-        this.RealTAG=RealTAG;
+        this.RealTAG=realTAG;
     }
 
     @Override

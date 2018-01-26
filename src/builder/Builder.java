@@ -15,6 +15,11 @@ public abstract class Builder {
         return product;
     }
 
+    protected void testFunction()
+    {
+
+    }
+
     public abstract void buildAttribute1(String s);
     public abstract void buildAttribute2(String s);
     public abstract void buildAttribute3(String s);

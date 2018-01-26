@@ -5,6 +5,10 @@ package builder;
  */
 public class ProductBuilder extends Builder {
 
+    @Override
+    protected void testFunction() {
+        super.testFunction();
+    }
 
     @Override
     public void buildAttribute1(String s) {
